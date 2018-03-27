@@ -139,7 +139,7 @@ div.intro
       <div class="item active">
         <img src="image/backimg1.png" alt="Image1">
         <div class="carousel-caption">
-        	<h3>Wish You a Happy Journey!</h3>
+        	<h3>Wish You a Happy Journey!!</h3>
         </div>
       </div>
 
