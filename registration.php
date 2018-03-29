@@ -14,7 +14,7 @@
 			width: 100%;
 		height: 100%;
 
-    background-image: url("background1.jpg");
+    background-image: url("image/reg.png") ;
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;overflow-x: 
@@ -110,14 +110,21 @@ div.registration input[type="reset"]
 #dob{
 	margin-right: 20px;
 	}
+
+h1{
+	background-color: #212;
+	color: white;
+}	
 	</style>
 }
 </head>
 
-<body>
+<body >
+
+
 
 <div>
-<h1 style="text-align:center">POTHERI TOURS AND TRAVELS</h1><br><br>
+<h1 style="text-align:center" >SAFAR TOURS AND TRAVELS</h1><br><br>
 </div>
 <div class="registration">
 

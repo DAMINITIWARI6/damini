@@ -11,7 +11,7 @@
 		width: 100%;
 		height: 100%;
 
-    background-image: url("background.jpg");
+    background-image: url("image/reg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,15 +82,16 @@ div.container input[type="submit"]
 	font-weight: bolder;
 	font-size: "50";
 
-
-
 }
+ 
+ h1{
+ 	color: white;
+ }
+ p{
+ 	color: white;
+ }
 </style>
-<!--<script>
-function myFunction() {
-    alert("[!] login succesfully. ");
-}
-</script>-->
+
 
 
 </head>
@@ -104,7 +105,7 @@ $message = "";
 				
 			<div class="header-content">
 				<header>
-				<h1 style="text-align:center">POTHERI TOURS AND TRAVELS</h1><br><br>
+				<h1 style="text-align:center">SAFAR TOURS AND TRAVELS</h1><br><br>
 			</header>
 			</div>
 			<div class="container">
