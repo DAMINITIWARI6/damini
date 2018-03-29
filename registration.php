@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
 	<title>Registration</title>
 	<meta charset="utf-8">
@@ -24,16 +25,16 @@
 
 		div.registration
 		{
-			width: 390px;
-		height: 340px;
-		background-color: #424242;
+			width: 380px;
+		height: 410px;
+		background-color: #D3D3D3;
 		margin: 0 auto;
 		margin-top: 15px;
 		padding-top: 10px;
 		padding-left: 30px;
 		padding-right: 20px;
 		border-radius: 15px;
-		color: white;
+		color: black;
 		font-weight: bolder;
 		box-shadow: 4px 4px rgba(1,1,1,1);
 		
@@ -116,7 +117,6 @@ h1{
 	color: white;
 }	
 	</style>
-}
 </head>
 
 <body >
@@ -128,32 +128,33 @@ h1{
 </div>
 <div class="registration">
 
-	<h3 style= "text-align:center">(REGISTRATION/SIGN UP PAGE)</h3>
-	<center><form  name ="myForm" action='regn.php' method='POST' autocomplete="on" onsubmit="return validateForm()">
+	<h3 style= "text-align:center">REGISTRATION</h3>
+	<center><form  name ="myForm" action='regn.php' method='POST' autocomplete="on">
 		
 		<table valign="center">
-			<tr><td><b>FIRST NAME:</b></td><td><input type="text" name="frstname"   placeholder="firstname"  ><span class="error">*</span></td></tr>
+			<tr><td><b>First Name:</b></td><td><input type="text" name="frstname"   placeholder="First name"  ><span class="error">*</span></td></tr>
 		
-			<tr><td><b>LAST NAME:</b></td><td><input type="text" name="lastname" placeholder="lastname..." ><span class="error">*</span></td></tr>
+			<tr><td><b>Last Name:</b></td><td><input type="text" name="lastname" placeholder="Last name" ><span class="error">*</span></td></tr>
 
-			<tr><td><b>USER NAME:</b></td><td><input type="text" name="username" placeholder="username..." ><span class="error">*</span></td></tr>
-
-
-			<tr><td><b>PASSWORD:</b></td><td><input type="password" name="pass" placeholder="password..." ><span class="error">*</span></td></tr>
+			<tr><td><b>Username:</b></td><td><input type="text" name="username" placeholder="Username" ><span class="error">*</span></td></tr>
 
 
-			<!--<tr><td><b>GENDER:</b></td><td><input type="radio" name="gender" value="male">Male<input type="radio" name="GENDER" value="female">Female</td></tr>-->
-		
+			<tr><td><b>Password:</b></td><td><input type="password" id="pass" name="pass" placeholder="Password" ><span class="error">*</span></td></tr>
 			
-			<tr><td><b>DATE OF BIRTH:</b></td><td><input type="DATE" name="dob" ></td></tr>
+			<tr><td><b>Confirm Password:</b></td><td><input type="password" id="cpass" name="cpass" placeholder="Confirm password" ><span class="error">*</span></td></tr>
 
-			<tr><td><b>E-Mail id:</b></td><td><input type="text" name="emailid" placeholder="email id...." ><span class="error">*</span></td></tr>
+
+			<tr><td><b>Gender:</b></td><td><input type="radio" name="gender" value="m">Male<input type="radio" name="gender" value="f">Female</td></tr>
+			
+			<tr><td><b>Date Of Birth:</b></td><td><input type="DATE" name="dob" ></td></tr>
+
+			<tr><td><b>E-Mail id:</b></td><td><input type="text" name="emailid" placeholder="Email id" ><span class="error">*</span></td></tr>
 		
 		
-		    <tr><td><b>MOBILE NO:</b></td><td><input type="text" name="phoneno" placeholder="Mobile number..." ><span class="error">*</span></td></tr>
+		    <tr><td><b>Mobile Number:</b></td><td><input type="text" name="phoneno" placeholder="Mobile number" ><span class="error">*</span></td></tr>
 		    <tr><td></td></tr>
 		
-		    <tr><td></td><td><input type="submit" value="SUBMIT"></td></tr>
+		    <tr><td></td><td><input type="submit" value="SUBMIT" onclick="return validateForm()"></td></tr>
 		    <tr><td></td></tr>
 
 		     <tr><td></td><td><input type="reset" value="RESET"></td></tr>
@@ -202,7 +203,23 @@ h1{
         alert(" Usename must be filled out");
         return false;
     }
+	
+      var a = document.forms["myForm"]["pass"].value;
+      if (a == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+		var b = document.forms["myForm"]["cpass"].value;
+	if(a != b)
+		{
+			alert ("Passwords do not match!");
+			return false;
+		}
+		else
+			return true;
+	
        var m = document.forms["myForm"]["phoneno"].value;
+	   
        var phoneno = /^\d{10}$/; 
        if(m=="")
        {
@@ -221,13 +238,7 @@ h1{
           return false;  
         }  
        }
-        
-
-      var a = document.forms["myForm"]["pass"].value;
-      if (a == "") {
-        alert(" password must be filled out");
-        return false;
-    }
+    
       var e = document.forms["myForm"]["emailid"].value;
       if(e==""){
       	alert("E-Mail must be filled out");
@@ -239,18 +250,10 @@ h1{
       	alert("Check for proper E-Mail Entry");
       	return false;
       }
-
-       
-
+	
  }
-
-
       
-    
-
-
-    
-
+   
 </script>
 
 </body>
