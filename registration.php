@@ -23,18 +23,34 @@
 
 		.error {color: #FF0000;}
 
+		header
+	{
+		
+	    border: 1px ;
+	    margin-top: 0px;
+		color: #FFFFFF;
+
+         height: 50px;
+         top: 10px;
+
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		text-c
+	}
+	
+		
 		div.registration
 		{
 			width: 380px;
 		height: 410px;
-		background-color: #D3D3D3;
+		background-color: rgba(0,0,0,0.65);
 		margin: 0 auto;
 		margin-top: 15px;
 		padding-top: 10px;
 		padding-left: 30px;
 		padding-right: 20px;
 		border-radius: 15px;
-		color: black;
+		color: white;
 		font-weight: bolder;
 		box-shadow: 4px 4px rgba(1,1,1,1);
 		
@@ -111,21 +127,17 @@ div.registration input[type="reset"]
 #dob{
 	margin-right: 20px;
 	}
-
-h1{
-	background-color: #212;
-	color: white;
-}	
+	
 	</style>
 </head>
 
 <body >
 
-
-
-<div>
-<h1 style="text-align:center" >SAFAR TOURS AND TRAVELS</h1><br><br>
-</div>
+<div class="header-content">
+				<header>
+				<h1 style="text-align:center">SAFAR TOURS AND TRAVELS</h1><br><br>
+			</header>
+			</div>
 <div class="registration">
 
 	<h3 style= "text-align:center">REGISTRATION</h3>
