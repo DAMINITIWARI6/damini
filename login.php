@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>login_page</title>
+	<script>
+	function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+	</script>
+	<title>Login</title>
 	<meta charset="utf-8">
- 
-	
 	<style>
 	body
 	{
@@ -23,7 +31,7 @@
 		
 	    border: 1px ;
 	    margin-top: 0px;
-		font-color: black;
+		color: #FFFFFF;
 
          height: 50px;
          top: 10px;
@@ -37,21 +45,18 @@
 div.container
 {
 	
-	
 	width: 300px;
 	height: 290px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.65);
 	margin: 0 auto;
 	margin-top: 80px;
 	padding-top: 10px;
 	padding-left: 50px;
 	border-radius: 15px;
 	border-top-style: 
-	color: white;
+	color: #FFFFFF;
 	font-weight: bolder;
 	box-shadow: 4px 4px rgba(1,1,1,0.5);
-	
-
 
 }
 div.container input[type="text"]
@@ -81,25 +86,10 @@ div.container input[type="submit"]
 	border-radius: 5px;
 	font-weight: bolder;
 	font-size: "50";
-
 }
- 
- h1{
- 	color: white;
- }
- p{
- 	color: white;
- }
 </style>
-
-
-
 </head>
 <body>
-<?php
-
-$message = "";
-?>
 
 			<div class="background_wallpaper">
 				
@@ -110,33 +100,29 @@ $message = "";
 			</div>
 			<div class="container">
 
-				<P>(LOGIN PAGE)</P>
+				<P style="color:#FFFFFF;">Please enter details to login</P>
 				<div class="hello">
-			<FORM name="Login" method="POST" action="valid.php">
-				
-				 <p>
-   					 <label for="email">USER NAME</label><br>
-					<input type="text" placeholder="your username....." name="username"  required><br>
-				</p>	
-				 <p>
-    				<label for="password">PASSWORD</label><br>
-					<input type="PASSWORD" placeholder="your password....." name="pass" required><br>
-				</p>
-				 <p>
-    				<input type="checkbox" name="remember" id="remember">
-    				<label for="remember">Remember me for 1 Day</label><br>
-  				</p>
-				<p>
-    				<span id="message"><?php echo $message;	?></span>
-    				<input type="submit" name="go" id="go" onclick="myFunction()" value="Log in">
-    				
-  				</p>
-				
-
-				
-			</FORM>
+			<form name="Login" id="login-form" action="valid.php" method="post" role="form" style="display: block;">
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<br><br>
+									<div class="form-group">
+										<input type="password" name="pass" id="pass" tabindex="2" class="form-control" placeholder="Password">
+										<br><br>
+										<input type="checkbox" onclick="myFunction()">Show Password
+									</div>
+									<br>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="go" id="go" tabindex="4" class="form-control btn btn-login" onclick="myFunction()" value="Log In">
+											</div>
+										</div>
+									</div>
+								</form>
 				</div>
-				<p>New User?&nbsp;&nbsp;<a href="registration.php" target="_blank" title="sign up" >sign up</a> </p>
+				<p style="color:#FFFFFF;">New User?&nbsp;&nbsp;<a href="registration.php" target="_blank" title="sign up" >Sign Up</a> </p>
 
 			</div>
 			</div>
