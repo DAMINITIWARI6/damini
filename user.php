@@ -1,11 +1,13 @@
      <?php
+		include "connection.php";
         session_start();
         if(!$_SESSION['username']){
            session_destroy();
            header("location:index.php");
            exit();
+		   
         }?>
-
+		
 
         <?php
 if(isset($_GET['submit'])){
@@ -114,12 +116,12 @@ $(document).ready(function(){
   <div class="container2">
 
   <ul class="tabs">
-    <li class="tab-link current" data-tab="tab-1">view places</li>
+    <li class="tab-link current" data-tab="tab-1">View Places</li>
     <li class="tab-link current"> <a href="logout.php" style="color: #2a2a2a; font-family: Ubuntu, sans-serif;">Logout</a></li>
     
 
   </ul>
-<center><p>Where are you planning <?php print($_SESSION['username']);?> ? </p>
+<center><p>Where are you planning, <?php echo $_SESSION['fname']?> ? </p>
 <form action="" method="GET">
         <input type="text" name="query" />
         <input type="submit" name="submit" value="Search" />
@@ -193,46 +195,13 @@ $(document).ready(function(){
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
         <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="kerla.php"> Kerla </a></h4></center> 
+               <center><h4 class="card-title"><a href="kerla.php"> Kerala </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 6 Days 5 Nights</p>
@@ -260,7 +229,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="pondicherry.jpg" alt="Card image cap" width="230" height="240">
+        <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="pondicherry.php"> Pondicherry </a></h4></center> 
@@ -275,7 +244,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="kashmir.jpg" alt="Card image cap" width="230" height="240">
+        <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="kashmir.php"> Kashmir </a></h4></center> 
@@ -289,34 +258,13 @@ $(document).ready(function(){
         </div>
     </div>
 
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
    <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img  src="hyderabad.jpg" alt="Card image cap" width="230" height="240">
+        <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="hyderbad.php"> Hyderbad </a></h4></center> 
@@ -332,7 +280,7 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="kodaikanal.jpg" alt="Card image cap" width="230" height="240">
+        <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="kodaikanal.php"> Kodaikanal </a></h4></center> 
@@ -348,34 +296,6 @@ $(document).ready(function(){
     
 
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 </div>
 </div>
   
