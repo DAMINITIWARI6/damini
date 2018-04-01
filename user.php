@@ -1,4 +1,4 @@
-     <?php
+         <?php
 		include "connection.php";
         session_start();
         if(!$_SESSION['username']){
@@ -12,11 +12,33 @@
         <?php
 if(isset($_GET['submit'])){
   if(empty($_GET['query'])){
-echo "Enter a search term";
+echo "<script> alert('Enter a search term'); </script>";
   }
 
 $query=$_GET['query'];
-echo $query;
+if ($query == 'delhi' || $query == 'Delhi')
+	header('location:place.php?Pid=delhi');
+else if ($query == 'kolkata' || $query == 'Kolkata')
+	header('location:place.php?Pid=kolkata');
+else if ($query == 'mumbai' || $query == 'Mumbai')
+	header('location:place.php?Pid=mumbai');
+else if ($query == 'bangalore' || $query == 'Banglore')
+	header('location:place.php?Pid=banglore');
+else if ($query == 'kerela' || $query == 'Kerala')
+	header('location:place.php?Pid=kerla');
+else if ($query == 'kodaikanal' || $query == 'Kodaikanal')
+	header('location:place.php?Pid=kodaikanal');
+else if ($query == 'goa' || $query == 'Goa')
+	header('location:place.php?Pid=goa');
+else if ($query == 'pondicherry' || $query == 'Pondicherry')
+	header('location:place.php?Pid=pondicherry');
+else if ($query == 'hyderabad' || $query == 'Hyderabad')
+	header('location:place.php?Pid=hyderbad');
+else if ($query == 'kashmir' || $query == 'Kashmir')
+	header('location:place.php?Pid=kashmir');
+else
+	echo "<script> alert('Sorry, this location is not available!'); </script>";
+
 }
 ?>
 
@@ -138,7 +160,7 @@ $(document).ready(function(){
         <img  src="image/mumbai.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="mumbai.php" id="mumbai"> Mumbai </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'mumbai'; ?>" id="mumbai"> Mumbai </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 3 Days 2 Nights</p>
@@ -153,8 +175,7 @@ $(document).ready(function(){
         <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="image/delhi1.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
-
-               <center><h4 class="card-title"><a href="delhi.php"> Delhi </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'delhi';?>"> Delhi </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 5 Days 4 Nights</p>
@@ -169,7 +190,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/banglore.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="image/banglore.php"> Banglore </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'banglore'; ?>"> Banglore </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 4 Days 3 Nights</p>
@@ -184,7 +205,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/goa.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="image/goa.php"> Goa </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'goa'; ?>"> Goa </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 5 Days 4 Nights</p>
@@ -201,7 +222,7 @@ $(document).ready(function(){
         <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="kerla.php"> Kerala </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kerla'; ?>"> Kerala </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 6 Days 5 Nights</p>
@@ -217,7 +238,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/kolkata.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="kolkata.php"> Kolkata </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kolkata'; ?>"> Kolkata </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 5 Days 4 Nights</p>
@@ -232,7 +253,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="pondicherry.php"> Pondicherry </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'pondicherry'; ?>"> Pondicherry </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 3 Days 2 Nights</p>
@@ -247,7 +268,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="kashmir.php"> Kashmir </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kashmir'; ?>"> Kashmir </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 7 Days 6 Nights</p>
@@ -267,7 +288,7 @@ $(document).ready(function(){
         <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="hyderbad.php"> Hyderbad </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'hyderbad'; ?>"> Hyderabad </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 4 Days 3 Nights</p>
@@ -283,7 +304,7 @@ $(document).ready(function(){
         <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
-               <center><h4 class="card-title"><a href="kodaikanal.php"> Kodaikanal </a></h4></center> 
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kodaikanal'; ?>"> Kodaikanal </a></h4></center> 
                 <div class="card-text">
                     
                     <p>Number of Days: 3 Days 2 Nights</p>
@@ -296,6 +317,9 @@ $(document).ready(function(){
     
 
   </div>
+
+  
+
 </div>
 </div>
   
@@ -315,3 +339,4 @@ $(document).ready(function(){
 </body>
 
 </html>
+
