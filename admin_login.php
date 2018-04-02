@@ -1,3 +1,6 @@
+<?php
+include "navbar.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +12,8 @@
 	{
 		width: 100%;
 		height: 100%;
-		background-color: #90caf9
-    
+		
+        background-image: url("image/reg.png") ;
 
 
 	}
@@ -21,7 +24,7 @@
 	
 	width: 300px;
 	height: 290px;
-	background-color: rgba(0,0,0,0);
+	background-color: #191414;
 	margin: 0 auto;
 	margin-top: 80px;
 	padding-top: 10px;
@@ -66,6 +69,9 @@ div.container input[type="submit"]
 
 
 }
+p{
+	color: white;
+}
 
 	</style>
 </head>
@@ -83,11 +89,11 @@ div.container input[type="submit"]
 				<P>(ADMIN LOGIN)</P>
 				<div class="hello">
 			<FORM method="POST" action="adminvalid.php">
-				<div class="user">
-				USERNAME:<br>
+				<div class="user"><p>
+				USERNAME:</p><br>
 				</div>
-				<input type="text" placeholder="admin ID......" name="username" required><br><br>
-				PASSWORD:<br>
+				<input type="text" placeholder="admin ID......" name="username" required><br><br><p>
+				PASSWORD:</p><br>
 				<input type="PASSWORD" placeholder="password...." name="pass" required><br><br>
 				<input type="submit" name="login" value="login"><br><br>
 				
