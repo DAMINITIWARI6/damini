@@ -1,6 +1,7 @@
 
 <?php
 	include "connection.php";
+	include "navbar.php";
 	?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +31,7 @@
 	    margin-top: 0px;
 		color: #FFFFFF;
 
-         height: 50px;
+         height: 0px;
          top: 10px;
 
 		background: rgba(0,0,0,0.5);
@@ -42,7 +43,7 @@
 		div.registration
 		{
 			width: 380px;
-		height: 410px;
+		height: 500px;
 		background-color: rgba(0,0,0,0.65);
 		margin: 0 auto;
 		margin-top: 15px;
@@ -133,11 +134,7 @@ div.registration input[type="reset"]
 
 <body >
 
-<div class="header-content">
-				<header>
-				<h1 style="text-align:center">SAFAR TOURS AND TRAVELS</h1><br><br>
-			</header>
-			</div>
+
 <div class="registration">
 
 	<h3 style= "text-align:center">REGISTRATION</h3>

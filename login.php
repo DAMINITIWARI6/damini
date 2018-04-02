@@ -1,6 +1,12 @@
+
+<?php
+	include "connection.php";
+	include "navbar.php";
+	?>
 <!DOCTYPE html>
 <html>
 <head>
+
 	<script>
 	function myFunction() {
     var x = document.getElementById("pass");
@@ -26,28 +32,14 @@
 
 
 	}
-	header
-	{
-		
-	    border: 1px ;
-	    margin-top: 0px;
-		color: #FFFFFF;
 
-         height: 50px;
-         top: 10px;
-
-		background: rgba(0,0,0,0.5);
-		width: 100%;
-		text-c
-	}
-	
 	
 div.container
 {
 	
 	width: 300px;
-	height: 290px;
-	background-color: rgba(0,0,0,0.65);
+	height: 350px;
+	background-color: #191414;
 	margin: 0 auto;
 	margin-top: 80px;
 	padding-top: 10px;
@@ -103,11 +95,12 @@ div.container input[type="submit"]
 				<P style="color:#FFFFFF;">Please enter details to login</P>
 				<div class="hello">
 			<form name="Login" id="login-form" action="valid.php" method="post" role="form" style="display: block;">
-									<div class="form-group">
+									<div class="form-group"><p style="color: #FFF">user name</p>
 										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
 									</div>
-									<br><br>
+									
 									<div class="form-group">
+										<p style="color: #FFF">password</p>
 										<input type="password" name="pass" id="pass" tabindex="2" class="form-control" placeholder="Password">
 										<br><br>
 										<input type="checkbox" onclick="myFunction()">Show Password
