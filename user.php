@@ -1,4 +1,4 @@
-         <?php
+     <?php
 		include "connection.php";
         session_start();
         if(!$_SESSION['username']){
@@ -36,6 +36,8 @@ else if ($query == 'hyderabad' || $query == 'Hyderabad')
 	header('location:place.php?Pid=hyderbad');
 else if ($query == 'kashmir' || $query == 'Kashmir')
 	header('location:place.php?Pid=kashmir');
+else if ($query == 'jaipur' || $query == 'Jaipur')
+	header('location:place.php?Pid=jaipur');
 else
 	echo "<script> alert('Sorry, this location is not available!'); </script>";
 
@@ -139,14 +141,15 @@ $(document).ready(function(){
 
   <ul class="tabs">
     <li class="tab-link current" data-tab="tab-1">View Places</li>
-    <li class="tab-link current"> <a href="logout.php" style="color: #2a2a2a; font-family: Ubuntu, sans-serif;">Logout</a></li>
+	<li class="tab-link" data-tab="tab-2">My Bookings</li>
+    <li class="tab-link logoutt"> <a href="logout.php" style="color: #ffffff; font-family: Ubuntu, sans-serif;">Logout</a></li>
     
 
   </ul>
 <center><p>Where are you planning, <?php echo $_SESSION['fname']?> ? </p>
 <form action="" method="GET">
         <input type="text" name="query" />
-        <input type="submit" name="submit" value="Search" />
+        <button class="button" type="submit" name="submit"><span>Search</span></button>
     </form>
    
 </center><br>
@@ -157,8 +160,7 @@ $(document).ready(function(){
   <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'mumbai'; ?>" id="mumbai">
-        <img  src="image/mumbai.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img  src="image/mumbai.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'mumbai'; ?>" id="mumbai"> Mumbai </a></h4></center> 
@@ -174,8 +176,7 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'delhi';?>">
-        <img class="card-img-top" src="image/delhi1.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/delhi1.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'delhi';?>"> Delhi </a></h4></center> 
                 <div class="card-text">
@@ -189,9 +190,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-
-            <a href="place.php?Pid=<?php echo 'banglore'; ?>">
-        <img class="card-img-top" src="image/banglore.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/banglore.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'banglore'; ?>"> Banglore </a></h4></center> 
@@ -206,8 +205,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'goa'; ?>">
-        <img class="card-img-top" src="image/goa.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/goa.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'goa'; ?>"> Goa </a></h4></center> 
@@ -224,8 +222,7 @@ $(document).ready(function(){
     <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'kerla'; ?>">
-        <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kerla'; ?>"> Kerala </a></h4></center> 
@@ -241,8 +238,7 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'kolkata'; ?>">
-        <img class="card-img-top" src="image/kolkata.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/kolkata.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kolkata'; ?>"> Kolkata </a></h4></center> 
@@ -257,8 +253,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'pondicherry'; ?>">
-        <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'pondicherry'; ?>"> Pondicherry </a></h4></center> 
@@ -273,8 +268,7 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'kashmir'; ?>">
-        <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kashmir'; ?>"> Kashmir </a></h4></center> 
@@ -294,8 +288,7 @@ $(document).ready(function(){
    <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'hyderbad'; ?>"> 
-        <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'hyderbad'; ?>"> Hyderabad </a></h4></center> 
@@ -311,8 +304,7 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-            <a href="place.php?Pid=<?php echo 'kodaikanal'; ?>">
-        <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240"></a>
+        <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240">
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kodaikanal'; ?>"> Kodaikanal </a></h4></center> 
@@ -325,16 +317,74 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-    
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="image/jaipur.jpg" alt="Card image cap" width="230" height="240">
+            <div class="card-block">
+
+               <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'jaipur'; ?>"> Jaipur </a></h4></center> 
+                <div class="card-text">
+                    
+                    <p>Number of Days: 5 Days 4 Nights</p>
+                    <p>Rs 15,500 Approximate</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
   </div>
 
-  
-
 </div>
 </div>
   
+ <div id="tab-2" class="tab-content">
+ <?php
 
+$id=$_SESSION['loggedIn_cust_id'];
+$con=  mysqli_connect("localhost", "root", "", "project");
+
+        if(!$con)
+       {
+           die('not connected');
+       }
+            $result=  mysqli_query($con, "SELECT name, days, nights, doj, total FROM placedetails WHERE ID_regist='".$id."'");
+
+?>
+<div class="container3">
+<CENTER><h2>My Bookings</h2> 
+<table class="table table-bordered">
+
+  <th>Place</th>
+  <th>Days</th>
+  <th>Nights</th>
+  <th>Date of Journey</th>
+  <th>Total Cost</th>
+  
+
+
+        <?php
+
+             while($row =mysqli_fetch_array($result))
+
+             {
+                 ?>
+            <tr>
+                <td><?php echo $row['name']; ?></td>
+                <td><?php echo $row['days']; ?></td>
+                <td><?php echo $row['nights'] ;?></td>
+                <td><?php echo $row['doj'] ;?></td>
+                <td><?php echo $row['total'];?></td>
+                  
+                
+            </tr>
+        <?php
+             }
+             ?>
+             </table>
+            </div>
+
+ </div>
     <script src="js/jquery.js"></script>
 
     
@@ -350,4 +400,3 @@ $(document).ready(function(){
 </body>
 
 </html>
-
