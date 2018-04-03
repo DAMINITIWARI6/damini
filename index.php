@@ -26,7 +26,7 @@ div.intro
 {
 	width: 100%;
 	height: 100px;
-	background-color: #42a5f5;
+	background-color: #000;
 }
 .intro h1
 {
@@ -172,9 +172,9 @@ div.intro
 
 
 <div class="intro">
-	<h1 ><b>
-  + Tours And Travels</b></h1>
-	<p>It has been more than 5 years since ASP Tours And Travels is started Over 150 regular clients all over India use our services. we are proud to say it just got even better in every possible way.</p>
+	<h1 style="color: white" ><b>
+  SAFAR Tours And Travels</b></h1>
+	<p style="color: white"><center> It has been more than 5 years since ASP Tours And Travels is started Over 150 regular clients all over India use our services. we are proud to say it just got even better in every possible way.</center></p>
 </div>
 
 <div style="padding-top: 10px;padding-left: 90px;padding-right: 20px;">
@@ -294,7 +294,7 @@ div.intro
       
             <div class="container">
                  <div class="col-sm-6">
-                <strong><p style="color: white;">Copyright <i class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></i> 2017 Potheri Travels. All rights reserved</p></strong> 
+                <strong><p style="color: white;">Copyright <i class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></i> 2018 SAFAR Travels. All rights reserved</p></strong> 
             </div>
 
 

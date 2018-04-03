@@ -23,8 +23,8 @@ include "navbar.php";
 	
 	
 	width: 300px;
-	height: 290px;
-	background-color: #191414;
+	height: 280px;
+	background-color: rgba(0,0,0,0.65);
 	margin: 0 auto;
 	margin-top: 80px;
 	padding-top: 10px;
@@ -81,7 +81,7 @@ p{
 				
 			<div class="header-content">
 				<header>
-				<h1 style="text-align:center">POTHERI TOURS AND TRAVELS</h1><br><br>
+				<h1 style="text-align:center">SAFAR TOURS AND TRAVELS</h1><br><br>
 			</header>
 			</div>
 			<div class="container">
@@ -90,10 +90,10 @@ p{
 				<div class="hello">
 			<FORM method="POST" action="adminvalid.php">
 				<div class="user"><p>
-				USERNAME:</p><br>
+				USERNAME:</p>
 				</div>
 				<input type="text" placeholder="admin ID......" name="username" required><br><br><p>
-				PASSWORD:</p><br>
+				PASSWORD:</p>
 				<input type="PASSWORD" placeholder="password...." name="pass" required><br><br>
 				<input type="submit" name="login" value="login"><br><br>
 				

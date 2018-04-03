@@ -157,7 +157,7 @@ div.registration input[type="reset"]
 			
 			<tr><td><b>Date Of Birth:</b></td><td><input type="DATE" name="dob" ></td></tr>
 
-			<tr><td><b>E-Mail id:</b></td><td><input type="text" name="emailid" placeholder="Email id" ><span class="error">*</span></td></tr>
+			<tr><td><b>E-Mail id:</b></td><td><input type="text" name="emailid" placeholder="Email id" ><span class="error">*</span></td></tr></br>
 		
 		
 		    <tr><td><b>Mobile Number:</b></td><td><input type="text" name="phoneno" placeholder="Mobile number" ><span class="error">*</span></td></tr>
