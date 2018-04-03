@@ -157,7 +157,8 @@ $(document).ready(function(){
   <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img  src="image/mumbai.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'mumbai'; ?>" id="mumbai">
+        <img  src="image/mumbai.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'mumbai'; ?>" id="mumbai"> Mumbai </a></h4></center> 
@@ -173,7 +174,8 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/delhi1.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'delhi';?>">
+        <img class="card-img-top" src="image/delhi1.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'delhi';?>"> Delhi </a></h4></center> 
                 <div class="card-text">
@@ -187,7 +189,9 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/banglore.jpg" alt="Card image cap" width="230" height="240">
+
+            <a href="place.php?Pid=<?php echo 'banglore'; ?>">
+        <img class="card-img-top" src="image/banglore.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'banglore'; ?>"> Banglore </a></h4></center> 
@@ -202,7 +206,8 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/goa.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'goa'; ?>">
+        <img class="card-img-top" src="image/goa.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'goa'; ?>"> Goa </a></h4></center> 
@@ -219,7 +224,8 @@ $(document).ready(function(){
     <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'kerla'; ?>">
+        <img  src="image/kerla.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kerla'; ?>"> Kerala </a></h4></center> 
@@ -235,7 +241,8 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/kolkata.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'kolkata'; ?>">
+        <img class="card-img-top" src="image/kolkata.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kolkata'; ?>"> Kolkata </a></h4></center> 
@@ -250,7 +257,8 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'pondicherry'; ?>">
+        <img class="card-img-top" src="image/pondicherry.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'pondicherry'; ?>"> Pondicherry </a></h4></center> 
@@ -265,7 +273,8 @@ $(document).ready(function(){
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'kashmir'; ?>">
+        <img class="card-img-top" src="image/kashmir.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kashmir'; ?>"> Kashmir </a></h4></center> 
@@ -285,7 +294,8 @@ $(document).ready(function(){
    <div class="row">
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'hyderbad'; ?>"> 
+        <img  src="image/hyderabad.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'hyderbad'; ?>"> Hyderabad </a></h4></center> 
@@ -301,7 +311,8 @@ $(document).ready(function(){
 
     <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240">
+            <a href="place.php?Pid=<?php echo 'kodaikanal'; ?>">
+        <img class="card-img-top" src="image/kodaikanal.jpg" alt="Card image cap" width="230" height="240"></a>
             <div class="card-block">
 
                <center><h4 class="card-title"><a href="place.php?Pid=<?php echo 'kodaikanal'; ?>"> Kodaikanal </a></h4></center> 

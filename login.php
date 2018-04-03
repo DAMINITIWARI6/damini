@@ -39,7 +39,7 @@ div.container
 	
 	width: 300px;
 	height: 350px;
-	background-color: #191414;
+	background-color: rgba(0,0,0,0.65);
 	margin: 0 auto;
 	margin-top: 80px;
 	padding-top: 10px;
@@ -95,17 +95,17 @@ div.container input[type="submit"]
 				<P style="color:#FFFFFF;">Please enter details to login</P>
 				<div class="hello">
 			<form name="Login" id="login-form" action="valid.php" method="post" role="form" style="display: block;">
-									<div class="form-group"><p style="color: #FFF">user name</p>
+									<div class="form-group"><p style="color: #FFF">USER NAME:</p>
 										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
 									</div>
 									
 									<div class="form-group">
-										<p style="color: #FFF">password</p>
+										<p style="color: #FFF">PASSWORD:</p>
 										<input type="password" name="pass" id="pass" tabindex="2" class="form-control" placeholder="Password">
-										<br><br>
+										<br>
 										<input type="checkbox" onclick="myFunction()">Show Password
 									</div>
-									<br>
+									
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
